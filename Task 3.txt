@@ -1,0 +1,85 @@
+let obj1 = {name: "person1", age: 5};
+let obj2 = {age: 5, name: "person1"};
+
+function compareObjects() {
+  if (Object.keys(obj1).length !== Object.keys(obj2).length) {
+    return false;
+  }
+  
+  for (let key in obj1) {
+    if (!obj2.hasOwnProperty(key) || obj1[key] !== obj2[key]) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+let final = compareObjects();
+console.log(final);
+-------------------------------------------------------------------------------------------------------------------
+<html>
+  <head>
+    <title>XMLHttpRequest Example</title>
+  </head>
+  <body>
+    <script>
+var xhr = new XMLHttpRequest();
+var method = "Get";
+var url = "https://restcountries.com/v3.1/all";
+
+xhr.open(method,url);
+xhr.onload function(){
+    if(xhr.status === 200){
+        console.log(xhr.responseText);
+        var contrydetails = JSON.parse (xhr.responseText);
+    for (i = 0, i < countrydetails.length, i++);
+    console.log(countrydetails(i).flag);
+
+    }
+}else{
+    conso,e.log("request faile",xhrstatus);
+}
+
+</script>
+</body>
+</html>
+----------------------------------------------------------------------------------------------------------------------------
+ if(xhr.status === 200){
+        console.log(xhr.responseText);
+        var contrydetails = JSON.parse (xhr.responseText);
+    for (i = 0, i < countrydetails.length, i++);
+    console.log(countrydetails(i).name);
+
+    }
+-------------------------------------------------------------------------------------------------------------------------------
+ if(xhr.status === 200){
+        console.log(xhr.responseText);
+        var contrydetails = JSON.parse (xhr.responseText);
+    for (i = 0, i < countrydetails.length, i++);
+    console.log(countrydetails(i).regions);
+
+    }
+----------------------------------------------------------------------------------------------------------------------
+if(xhr.status === 200){
+        console.log(xhr.responseText);
+        var contrydetails = JSON.parse (xhr.responseText);
+    for (i = 0, i < countrydetails.length, i++);
+    console.log(countrydetails(i).subregions);
+
+    }
+----------------------------------------------------------------------------------------------------------------------
+if(xhr.status === 200){
+        console.log(xhr.responseText);
+        var contrydetails = JSON.parse (xhr.responseText);
+    for (i = 0, i < countrydetails.length, i++);
+    console.log(countrydetails(i).population);
+
+    }
+------------------------------------------------------------------------------------------------------------------
+    conso,e.log("request faile",xhrstatus);
+}
+
+</script>
+</body>
+</html>
